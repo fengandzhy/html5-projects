@@ -2,24 +2,24 @@
 <html ng-app="app">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no,maxmium-ui">
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no,minimal-ui">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="css/reset.css" />
 	<style type="text/css">
 		html{
-
+			
 		}
 		body{
 			text-align: left;
-			width:100%;
-			overflow: hidden;
+			width:100%;			
+			overflow: visible;
 			background: #e9dfc7;			
 		}
 		.m-read-content{
 			font-size: 14px;
 			color:#555;
 			line-height: 31px;
-			padding: 15px;
+			padding: 15px;			
 		}
 		.m-read-content h4{
 			font-size: 20px;
@@ -168,7 +168,7 @@
 		}
 		.page-icons .page-font{	
 			position:absolute;
-			margin-left:30%;
+			margin-left:40%;
 			width:30px;
 			height:45px;
 			display: inline-block;
@@ -183,13 +183,22 @@
 			background: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/wAALCAAtAB4BAREA/8QAHAAAAQQDAQAAAAAAAAAAAAAABQIGBwgAAwQJ/8QAKhAAAQQCAgEDAwUBAQAAAAAAAgEDBAUGEQcSABMhQQgiMRQVFjJRI2H/2gAIAQEAAD8A8r/DuD4Neci5TXY1jcArO7sXPRixAMQV09KukIlQU9kX8r8eAvM8O4RhN5yFk8HHcbrnba6mqQx4bGu7iiBGWtqiewiS/n48tdPmYpxfhOIcqcnYOV7nt87Kq66nx2e5j8WK3WmkV6ZJON9xSjc2Omugr0Ul2pe4zOuJDyTjvGE4PxApGOcjNSLh2vnttyritdrnUZkRBll13GQ3W3BIREz7Ih7668qreU03HbmwqrGMUaxgyHIsmO5rs06BKJiuvlCRU84fLdcQZziGTPYjwaOLMcvY6+Qy4T+QTXKF6stHm+8sIshruQxl6AKi4K9zBTRB2nkdczcu49zLh0EgY/hknGHRrcewysj+pWM1p9jcNHyNXFk+tsnDc36ncda6qiwYbel0i7T8+J8U3pC+f/NJ5sRO3fXuqfHRPEue2lXafH9deTf9JOE4rm+Z5WOXQqqbW1OKWNq1+9vTm4TT7IgoOPfoiSQQJtdi3tVT8Iq+WCopHHf1C8nNs5OXD9/OfqpDTbeMfzOLNEYsB0mBjpJ6RQQPSBVQ9IqIX5Jfc/8AQpm62dnZQ67mzlSVUU+OOxBq59eMarhPvijEVthUtTFXPVNEaH0w7Kn5DS+VL57zgctOA1L5N5E5Ata511g4+fVyR1goukNG1KwlKhKQIhD1D+qbVda8b/EXK91w5cXNpRxqqZJsKp+pdC4ghMYRp9E7L6Lm2zVOqaRwTD/RXx3Y19W2bYdeBPjU+CG8jD7H/HBqiEaC624ySi9FjNPAujVUUHB/xdoqordyfnnIslwqqxCBGrcSxetIH0q8eYKOEqUCaSVIcIycee9k+4zVB19qD5x8l8xWfK8Sufvqil/f4v2SMihxSYnWKa0n6pRP03CTSff6aGvyS+f/2Q==);
 		}
 
-
+		.article-action-mid{
+			position: fixed;
+			width: 100%;
+			height: 30%;
+			top:30%;
+			z-index: 10002;
+		}
 	</style>	
 	<title>Document</title>
 </head>
 <body>
 	<div id="root" class="container">
-		<div id="top-nav" class="top-nav">
+		<div class="m-article-action">
+			<div class="article-action-mid" id="action_mid"></div>
+		</div>
+		<div id="top-nav" class="top-nav" style="display:none">
 			<div class="icon-back"></div>
 			<div class="nav-title">返回书架</div>
 		</div>
@@ -198,7 +207,8 @@
 			<h4>终极斗罗</h4>
 			<p>一万年后，冰化了。斗罗联邦科考队在极北之地科考时发现了一个有着金银双色花纹的蛋，用仪器探察之后，发现里面居然有生命体征，赶忙将其带回研究所进行孵化。 蛋孵化出来了，可孵出来的却是一个婴儿，和人类一模一样的婴儿，一个蛋生的孩子。一万年后，冰化了。斗罗联邦科考队在极北之地科考时发现了一个有着金银双色花纹的蛋，用仪器探察之后，发现里面居然有生命体征，赶忙将其带回研究所进行孵化。 蛋孵化出来了，可孵出来的却是一个婴儿，和人类一模一样的婴儿，一个蛋生的孩子。</p>
 			<p>一万年后，冰化了。斗罗联邦科考队在极北之地科考时发现了一个有着金银双色花纹的蛋，用仪器探察之后，发现里面居然有生命体征，赶忙将其带回研究所进行孵化。 蛋孵化出来了，可孵出来的却是一个婴儿，和人类一模一样的婴儿，一个蛋生的孩子。一万年后，冰化了。斗罗联邦科考队在极北之地科考时发现了一个有着金银双色花纹的蛋，用仪器探察之后，发现里面居然有生命体征，赶忙将其带回研究所进行孵化。 蛋孵化出来了，可孵出来的却是一个婴儿，和人类一模一样的婴儿，一个蛋生的孩子。</p>
-			
+			<p>一万年后，冰化了。斗罗联邦科考队在极北之地科考时发现了一个有着金银双色花纹的蛋，用仪器探察之后，发现里面居然有生命体征，赶忙将其带回研究所进行孵化。 蛋孵化出来了，可孵出来的却是一个婴儿，和人类一模一样的婴儿，一个蛋生的孩子。一万年后，冰化了。斗罗联邦科考队在极北之地科考时发现了一个有着金银双色花纹的蛋，用仪器探察之后，发现里面居然有生命体征，赶忙将其带回研究所进行孵化。 蛋孵化出来了，可孵出来的却是一个婴儿，和人类一模一样的婴儿，一个蛋生的孩子。</p>
+			<p>一万年后，冰化了。斗罗联邦科考队在极北之地科考时发现了一个有着金银双色花纹的蛋，用仪器探察之后，发现里面居然有生命体征，赶忙将其带回研究所进行孵化。 蛋孵化出来了，可孵出来的却是一个婴儿，和人类一模一样的婴儿，一个蛋生的孩子。一万年后，冰化了。斗罗联邦科考队在极北之地科考时发现了一个有着金银双色花纹的蛋，用仪器探察之后，发现里面居然有生命体征，赶忙将其带回研究所进行孵化。 蛋孵化出来了，可孵出来的却是一个婴儿，和人类一模一样的婴儿，一个蛋生的孩子。</p>
 		</div>
 		<div class="m-button-bar">
 			<ul class="u-tab">
@@ -206,8 +216,8 @@
 				<li id="next_button">下一章</li>
 			</ul>
 		</div>
-		<div class="nav-pannel-bk"></div>
-		<div class="nav-pannel" id="font-container">
+		<div class="nav-pannel-bk" style="display:none"></div>
+		<div class="nav-pannel" id="font-container" style="display:none">
 			<div class="child-mod">
 				<span>字号</span>
 				<button id="large-font" class="font-size-button">大</button>
@@ -220,7 +230,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="page-footer">
+		<div id="page-footer" class="page-footer" style="display:none">
 			<div class="page-icons">
 				<div class="page-catalogue"></div>
 				<div class="page-font"></div>
@@ -234,5 +244,71 @@
 	</script>
 	<script type="text/javascript" src="js/jquery.base64.js"></script>
 	<script type="text/javascript" src="js/jquery.jsonp.js"></script>
+	<script>
+
+		(function(){
+
+			var util = (function(){
+				var prefix = "html5_reader_";
+				var storageGetter = function(key){
+					return localStorage.getItem(prefix + key);
+				}
+				var storageSetter = function(key,val){
+					return localStorage.setItem(prefix + key,val);
+				}
+				return{
+					storageGetter:storageGetter,
+					storageSetter:storageSetter
+				}
+			})();
+			var dom = {
+				top_nav :$('#top-nav'),
+				page_footer :$('#page-footer')
+			}
+			var Win = $(window);
+			var Doc = $(document);
+			// var body = $(body);
+			
+			function main(){
+
+				EventHanlder();
+			}
+
+			function ReaderModel(){
+
+			}
+
+			function ReaderBaseFrame(){
+
+			}
+
+			function EventHanlder(){
+				$('#action_mid').click(function(){				
+					if(dom.top_nav.css('display') == 'none'){
+						dom.top_nav.show();
+						dom.page_footer.show();
+					}else{
+						dom.top_nav.hide();
+						dom.page_footer.hide();
+					}
+				});
+
+				// console.log(Win);
+				// console.log(body);
+				Win.scroll(function(){					
+					dom.top_nav.hide();
+					dom.page_footer.hide();
+				});
+
+				// $('body').scroll(function(){
+				// 	dom.top_nav.hide();
+				// 	dom.page_footer.hide();
+				// });
+			}
+
+			main();
+
+		})();
+	</script>
 </body>
 </html>
